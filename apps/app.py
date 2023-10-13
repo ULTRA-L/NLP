@@ -24,7 +24,7 @@ def get_most_similar_response(df, query, top_k=1):
     return most_similar_responses
 
 # Sample DataFrame with user_chat and response columns
-file = open("dialogs.txt")
+file = open(r"/dialogs.txt")
 
 data = []
 for line in file.readlines():
