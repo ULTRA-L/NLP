@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -24,7 +25,8 @@ def get_most_similar_response(df, query, top_k=1):
     return most_similar_responses
 
 # Sample DataFrame with user_chat and response columns
-file = open(r"/dialogs.txt")
+path = os.path.dirname(__file__)
+file = open(path+"/dialogs.txt")
 
 data = []
 for line in file.readlines():
