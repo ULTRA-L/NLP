@@ -36,7 +36,8 @@ file.close()
 
 df = pd.DataFrame(data, columns=['user_chat', 'response']) 
 
-st.title("Echo Bot")
+st.title("Kuya Loyd Bot")
+st.subheader("Talk to Kuya Loyd Bot!")
 
 # Initialize chat history
 if "messages" not in st.session_state:
