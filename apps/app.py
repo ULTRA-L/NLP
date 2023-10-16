@@ -61,7 +61,7 @@ if prompt := st.chat_input("What's up?"):
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         for response in responses:
-            st.markdown(f"Echo: {response}")
+            st.markdown(f"Kuya Loyd: {response}")
 
     # Add assistant response to chat history
     for response in responses:
